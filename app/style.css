@@ -18,16 +18,29 @@ h1 {
   color: #7c9d96;
 }
 
-#todoForm {
+ul li {
+  padding: 8px 20px;
+  font-size: 18px;
+  list-style: none;
+  user-select: none;
+}
+
+.Body-container {
+  max-width: 540px;
+  margin: 25px auto;
   padding: 30px 10px;
   background-color: #ffcacc;
   border-radius: 10px;
 }
-
-#inputBox {
+#todoForm {
+  margin-bottom: 20px;
+}
+#inputTask {
   padding: 5px 10px;
+  font-size: 18px;
   border: 1px solid #ffc6ac;
   border-radius: 8px;
+  outline: none;
 }
 
 #inputBox:focus {
@@ -35,6 +48,18 @@ h1 {
   border: none;
 }
 
-#addTodo {
-  visibility: hidden;
+#addBtn {
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
 }

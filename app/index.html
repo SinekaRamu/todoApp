@@ -9,10 +9,31 @@
   </head>
   <body>
     <h1>My Todo App</h1>
-    <form id="todoForm">
-      <input type="text" id="inputBox" placeholder="Enter things to do" />
-      <button type="submit" id="addTodo">create</button>
-    </form>
-    <div id="taskList"></div>
+    <div class="Body-container">
+      <form id="todoForm">
+        <input
+          type="text"
+          id="inputTask"
+          placeholder="Enter things to do"
+          required
+        />
+        <button type="submit" id="addBtn">Add</button>
+      </form>
+
+      <ul id="taskList">
+        <li>
+          <div class="form-check">
+            <input
+              onclick="completeTodo()"
+              class="form-check-input"
+              type="checkbox"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              task1
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
